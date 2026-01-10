@@ -48,7 +48,15 @@
   toggleSubMenu();
   $(window).resize(toggleSubMenu);
   // ============== Mobile Nav Menu Dropdown Js End =======================
-    
+    const script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-5684ZTW8QS';
+  document.head.appendChild(script);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-5684ZTW8QS');
   // ===================== Scroll Back to Top Js Start ======================
   var progressPath = document.querySelector('.progress-wrap path');
   var pathLength = progressPath.getTotalLength();
@@ -2048,3 +2056,4 @@ $(document).ready(function () {
 // ========================== Recruitment Pages Js End =====================
 
 })(jQuery);
+
